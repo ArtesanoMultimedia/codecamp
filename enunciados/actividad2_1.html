@@ -1,95 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Actividad 2.1: La Lista de Destinatarios de Hermes</title>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e7ecf0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-  }
-  .container {
-    text-align: center;
-    background: white;
-    padding: 2em;
-    margin: 2em;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 900px;
-  }
-  h1 {
-    color: #333;
-    margin-bottom: 0.5em;
-  }
-  p {
-    color: #555;
-    line-height: 1.6;
-  }
-  p.mito {
-    font-style: italic;
-    color: #888;
-    margin-bottom: 1em;
-  }
-  ol {
-    text-align: left;
-    display: inline-block;
-    margin: 1em auto;
-  }
-  ol li {
-    margin-bottom: 0.5em;
-  }
-  code {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    padding: 0.2em 0.4em;
-    border-radius: 4px;
-    font-family: monospace;
-    margin: 0 0.2em;
-  }
-  .emoji {
-    font-size: 2rem;
-    padding: 0 0.5rem;
-  }
-  .dios {
-    text-align: left;
-    font-size: 2rem;
-    color: black;
-    font-weight: bold;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  .mensaje {
-    text-align: justify;
-    padding-top: 0;
-    margin-top: 0;
-    font-size: 1.3rem;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2.1: 🍃 Mensajes al Viento: La Misión de Hermes 🍃</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        pre {
+            /* colores de tema oscuro */
+            background-color: #3b3b3b;
+            color: #ff7636;
+            border-color: #1e1e1e;
+            border-radius: 0.25rem; /* Bordes redondeados */
+            font-family: monospace; /* Fuente de estilo monoespaciado */
+            padding: 0.5rem; /* Espacio entre el texto y los bordes */
+        }
+        code {
+            /* colores de tema oscuro */
+            background-color: #3b3b3b;
+            color: #ff7636;
+            border-color: #1e1e1e;
+            border-radius: 0.25rem; /* Bordes redondeados */
+            font-family: monospace; /* Fuente de estilo monoespaciado */
+            padding: 0.3rem; /* Espacio entre el texto y los bordes */
+        }
+        h2, h3 {
+            color: #21a405;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <h1>Actividad 2.1: La Lista de Destinatarios de Hermes</h1>
-    <p class="mito">Hermes, el ágil mensajero de los dioses, requiere de tu astucia para manejar la entrega de mensajes divinos. Con tu ayuda, podrá garantizar que cada deidad reciba su correspondencia.</p>
-    <p class="dios">Hermes:</p>
-    <p class="mensaje">🕊️ Joven héroe, las festividades se aproximan y mi tarea de entregar postales a cada uno de los dioses del Olimpo es más abrumadora que nunca. Necesito tu habilidad para crear un sistema que gestione esta enorme lista de destinatarios. ¿Puedo confiar en ti para esta misión? 🕊️</p>
-    <p><strong>Instrucciones:</strong></p>
+<body class="bg-light">
+<div class="container mt-5 mb-5 p-4 bg-white shadow rounded">
+    <h1 class="mb-4">Actividad 2.1: 🍃 Mensajes al Viento: La Misión de Hermes 🍃</h1>
+    <p class="text-secondary fst-italic">¡Hola, jóvenes heraldos del código! 🌟 Hoy, como Hermes, el veloz mensajero, nos embarcamos en una aventura de palabras y vientos.</p>
+    <p class="text-secondary fst-italic">En nuestra travesía por el Olimpo digital, Hermes nos ha encomendado una tarea crucial. Necesitamos enviar saludos corteses a los cuatro Vientos Mitológicos para asegurar su favor en las futuras misiones de Hermes.</p>
+    <h2>Hermes:</h2>
+    <p class="text-justify">💌💨 Hola, valiente programador. Soy Hermes, el mensajero de los dioses. En mis viajes, la buena voluntad de los Vientos Mitológicos es esencial. Necesito que les envíes mensajes de cortesía en mi nombre, pidiéndoles que me sean propicios en mis misiones. Te confío esta tarea importante. Los Vientos son Bóreas (Norte), Noto (Sur), Euro (Este) y Zéfiro (Oeste). 💌💨</p>
+    <p class="text-justify">Para cumplir con esta misión, necesitamos escribir un programa que imprima un mensaje de saludo para cada uno de los cuatro Vientos Mitológicos. El mensaje debe incluir el nombre del Viento y un saludo cortés pidiéndole que me sea propicio. Por ejemplo, para el Viento Bóreas, el mensaje podría ser <code>"Saludos, Bóreas del Norte. Que tus gélidas corrientes guíen mis misiones."</code>.</p>
+    <h3>Pistas:</h3>
+    <p class="text-justify">Para lograr esto, necesitamos aprender a imprimir mensajes en la terminal. Para ello, utilizaremos el comando <code>print()</code> de Python. Este comando recibe un texto entre paréntesis y lo imprime en la terminal. Por ejemplo, <code>print("¡Hola, Olimpo!")</code> imprimirá el mensaje <code>"¡Hola, Olimpo!"</code> en la terminal.</p>
+    <p class="text-justify">Para imprimir un mensaje de saludo para cada uno de los cuatro Vientos Mitológicos, necesitamos escribir cuatro líneas de código, una para cada Viento. El código debería verse así:</p>
+    <pre><code>print("Saludos, Bóreas del Norte. Que tus gélidas corrientes guíen mis misiones.")</code></pre>
+    <pre><code>print("Saludos, Noto del Sur. Que tus cálidas brisas me sean benevolentes.")</code></pre>
+    <pre><code>print("Saludos, Euro del Este. Que tu viento veloz favorezca mis encargos.")</code></pre>
+    <pre><code>print("Saludos, Zéfiro del Oeste. Que tu suave soplo propicie mi éxito.")</code></pre>
+    <p class="text-justify">¡Ahora es tu turno! Escribe el código necesario para imprimir un mensaje de saludo para cada uno de los cuatro Vientos Mitológicos.</p>
+    <h3>Instrucciones:</h3>
     <ol>
-      <li>Asegúrate de que tu entorno de desarrollo esté listo con Python y un editor de texto como <code>Visual Studio Code</code>.</li>
-      <li>Crea una lista de nombres de dioses en un nuevo archivo de Python llamado <code>destinatarios.py</code>.</li>
-      <li>Utiliza un bucle para imprimir un mensaje personalizado para cada dios, anunciando la llegada de sus postales navideñas.</li>
-      <li>Guarda tus cambios y ejecuta el script para ver el resultado en la terminal.</li>
+        <li>Configura tu Espacio: Abre tu editor de Python y crea un nuevo archivo llamado <code>mensajes_a_los_vientos.py</code>.</li>
+        <li>Mensaje a Bóreas: Escribe
+            <pre><code>print('Saludos, Bóreas del Norte. Que tus gélidas corrientes guíen mis misiones.')</code></pre></li>
+        <li>Mensaje a Noto: Continúa con
+            <pre><code>print('Saludos, Noto del Sur. Que tus cálidas brisas me sean benevolentes.')</code></pre></li>
+        <li>Mensaje a Euro: Añade
+            <pre><code>print('Saludos, Euro del Este. Que tu viento veloz favorezca mis encargos.')</code></pre></li>
+        <li>Mensaje a Zéfiro: Concluye con
+            <pre><code>print('Saludos, Zéfiro del Oeste. Que tu suave soplo propicie mi éxito.')</code></pre></li>
+        <li>Ejecuta tu Código: Guarda el archivo y ejecútalo para ver tus mensajes impresos en la consola.</li>
     </ol>
-    <p>Esta tarea es fundamental para mantener el espíritu de las festividades entre los inmortales. Tu éxito contribuirá enormemente al bienestar del Olimpo.</p>
-    <p>Recuerda, la precisión es clave. Cada mensaje debe llegar a su destinatario adecuado. ¡Buena suerte!</p>
-  </div>
+    <h3>Agradecimiento:</h3>
+    <p>Gracias, estimado aliado. Con tus palabras, has asegurado la buena voluntad de los Vientos para mis futuras travesías. Tu habilidad en la programación es digna de un mensajero del Olimpo</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.9/umd/dist/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
