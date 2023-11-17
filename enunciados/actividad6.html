@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6: El Tiempo de Cronos</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        pre {
+            background-color: #3b3b3b;
+            color: #ff7636;
+            border-color: #1e1e1e;
+            border-radius: 0.25rem;
+            font-family: monospace;
+            padding: 0.5rem;
+        }
+        code {
+            background-color: #3b3b3b;
+            color: #ff7636;
+            border-color: #1e1e1e;
+            border-radius: 0.25rem;
+            font-family: monospace;
+            padding: 0.3rem;
+        }
+        h2, h3 {
+            color: #21a405;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container mt-5 mb-5 p-4 bg-white shadow rounded">
+    <h1 class="mb-4">Actividad 6: 🕒 El Tiempo de Cronos 🕒</h1>
+    <p class="text-secondary fst-italic">Hola, jóvenes viajeros del tiempo! 🕰️ Hoy vamos a ayudar a Cronos, el titán del tiempo, a calcular diferentes medidas del tiempo. ¿Están listos para un viaje a través de las horas, minutos y segundos?</p>
+    <p class="text-secondary fst-italic">Cronos quiere entender mejor cómo los humanos miden el tiempo. Necesita convertir horas en minutos, minutos en segundos, y viceversa. ¡Vamos a ayudarle con nuestras habilidades en Python!</p>
+    <h2>Cronos:</h2>
+    <p class="text-justify">📜✨ Hola, valientes programadores. Soy Cronos, y me intriga cómo los mortales miden el tiempo. ¿Podéis mostrarme cómo convertir horas en minutos, y minutos en segundos? ¡También quiero saber cómo volver de segundos a minutos y de minutos a horas! 📜✨</p>
+    <h3>Pistas:</h3>
+    <p class="text-justify">Para esta tarea, recordad que 1 hora tiene 60 minutos y 1 minuto tiene 60 segundos. Podéis usar operaciones básicas como la multiplicación y la división. Por ejemplo, para convertir 2 horas en minutos, simplemente multiplicáis 2 por 60.</p>
+    <h3>Instrucciones:</h3>
+    <ol>
+        <li>Configura tu Espacio: Abre tu editor de Python y crea un nuevo archivo llamado <code>cronos_tiempo.py</code>.</li>
+        <li>Declara las Variables: Define una variable para las horas, otra para los minutos y otra para los segundos.
+            <pre><code>horas = 2
+minutos = 30
+segundos = 1800</code></pre></li>
+        <li>Conversión a Minutos y Segundos: Convierte las horas y minutos a segundos.
+            <pre><code>minutos_en_segundos = minutos * 60
+horas_en_segundos = horas * 60 * 60</code></pre></li>
+        <li>Volver a Minutos y Horas: Convierte los segundos a minutos y horas.
+            <pre><code>segundos_a_minutos = segundos / 60
+segundos_a_horas = segundos / (60 * 60)</code></pre></li>
+        <li>Imprimir Resultados: Muestra los resultados usando la función <code>print()</code>.
+            <pre><code>print("Minutos en segundos:", minutos_en_segundos)
+print("Horas en segundos:", horas_en_segundos)
+print("Segundos a minutos:", segundos_a_minutos)
+print("Segundos a horas:", segundos_a_horas)</code></pre></li>
+    </ol>
+    <h3>Agradecimiento:</h3>
+    <p>Gracias, noble aliado. Con tu mente aguda y tu mano firme en el teclado, has ayudado a Cronos a comprender las medidas del tiempo. Tu astucia y habilidad en la programación son dignas de los mismísimos dioses del Olimpo. ¡Continúa así, futuro maestro del tiempo!</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.9/umd/dist/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
